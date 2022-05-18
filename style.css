@@ -51,7 +51,7 @@ h1 {
 }
 
 .hero {
-    background-image: url('/images/homepage/hero-bg-desktop.jpg');
+    background-image: url('./images/homepage/hero-bg-desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -256,7 +256,7 @@ img {
 }
 
 .footer-one {
-    background-image: url('/images/homepage/ready-bg-desktop.jpg');
+    background-image: url('./images/homepage/ready-bg-desktop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -630,6 +630,7 @@ img {
     .split div:nth-of-type(1) {
         font-size: .7rem;
         text-align: center;
+        width: ;
     }
 
 }

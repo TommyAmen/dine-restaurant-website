@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "League Spartan", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.invalid {
+  background-color: red;
+}
+
+h1 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 300;
+  font-size: 5rem;
+}
+
+.section-one {
+  background-image: url("../images/homepage/ready-bg-desktop@2x.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.section-one .logo {
+  margin-top: 2rem;
+}
+
+.hero {
+  padding: 5rem 0 9rem 0;
+  width: 34.1%;
+  text-align: left;
+}
+
+.lines {
+  text-align: center;
+  margin-top: 7rem;
+}
+.lines::before {
+  content: "";
+  position: absolute;
+  bottom: -75px;
+  left: 0;
+  background-color: #5c6779;
+  width: 900px;
+  height: 300px;
+  border-radius: 0 0 100px 0;
+  z-index: -1;
+  opacity: 0.15;
+}
+
+.footer-two {
+  margin-top: 70px;
+  background-color: #111111;
+  color: white;
+}
+.footer-two .foot {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  width: 86%;
+}
+.footer-two .times {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.footer-two .open p {
+  margin-top: 1rem;
+}
+.footer-two .location p {
+  margin-top: 1rem;
+}
+
+.date {
+  display: flex;
+  gap: 1rem;
+}
+
+.time {
+  display: flex;
+  gap: 0rem;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.form {
+  background-color: white;
+  width: 30%;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: absolute;
+  right: 270px;
+  top: 200px;
+  box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
+}
+
+.date {
+  color: #000;
+  font-size: 0.72rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.date input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 5.8rem;
+  text-align: center;
+  align-items: center;
+}
+.date input::-moz-placeholder {
+  color: gray;
+}
+.date input:-ms-input-placeholder {
+  color: gray;
+}
+.date input::placeholder {
+  color: gray;
+}
+
+.input-one {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.input-one #hour {
+  width: 5.8rem;
+  margin-left: 1rem;
+  margin-right: -2rem;
+}
+.input-one #minute {
+  width: 5.8rem;
+  margin-left: 1.3rem;
+}
+
+.time {
+  color: #000;
+  font-size: 0.72rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+.time input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 3rem;
+  text-align: center;
+}
+.time input:invalid {
+  color: red;
+}
+.time input::-moz-placeholder {
+  color: gray;
+}
+.time input:-ms-input-placeholder {
+  color: gray;
+}
+.time input::placeholder {
+  color: gray;
+}
+
+#period {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 5.5rem;
+  text-align: center;
+  margin-left: -0.65rem;
+}
+
+.people {
+  color: #000;
+}
+
+.reserve {
+  background: transparent;
+  border: 1px solid #000;
+  padding: 1rem 0 0.6rem 0;
+  transition: all 0.25s ease-out;
+  margin-top: 1rem;
+}
+.reserve:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #111111;
+}
+
+#name {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#email {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.people {
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+option {
+  border: none;
+  background-color: #fff;
+  width: 3rem;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid #000;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 820px) {
+  .lines::before {
+    opacity: 1;
+    display: none;
+  }
+
+  .section-one {
+    background-image: url("../images/homepage/ready-bg-tablet.jpg");
+  }
+  .section-one .hero {
+    text-align: center;
+    width: 80%;
+    margin: -2rem auto;
+  }
+  .section-one p {
+    width: 100%;
+    font-size: large;
+  }
+
+  .footer-two {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-two .times {
+    flex-direction: column;
+  }
+  .footer-two .location {
+    margin-bottom: 1rem;
+  }
+  .footer-two .location p {
+    line-height: 0.9;
+  }
+  .footer-two .open p {
+    line-height: 0.9;
+  }
+
+  .form {
+    margin-top: 10rem;
+    width: 60%;
+    right: 21%;
+  }
+
+  .date input {
+    width: 6rem;
+    justify-content: space-between;
+  }
+
+  .time input {
+    width: 5.7rem;
+    position: relative;
+    right: 0rem;
+    display: flex;
+  }
+  .time .input-one {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    gap: 1rem;
+  }
+  .time .input-one p {
+    font-size: 12px;
+  }
+
+  #period {
+    width: 6.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .footer-two {
+    position: relative;
+    bottom: -3.8rem;
+  }
+
+  .form {
+    right: 40px;
+    width: 80%;
+  }
+  .form .date {
+    flex-direction: column;
+  }
+  .form .date p {
+    font-size: 1rem;
+  }
+  .form .date input {
+    width: 4.5rem;
+  }
+  .form .date .input {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form .section-one {
+    background-image: url("../images/homepage/ready-bg-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .form .section-one .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .form .time {
+    flex-direction: column;
+  }
+  .form .time p {
+    margin-bottom: 0.5rem;
+    font-size: 17px;
+  }
+  .form .time input {
+    width: 5rem;
+  }
+  .form .time #hour {
+    width: 5rem;
+    margin-left: -0.3rem;
+  }
+  .form .time #minute {
+    width: 5rem;
+    margin-left: 2.2rem;
+  }
+  .form .time #period {
+    margin-left: 0.3rem;
+  }
+  .form .time .input-one {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
+  }
+
+  .hero {
+    margin-right: 8rem;
+  }
+  .hero h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-right: 1rem;
+  }
+  .hero p {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .logo {
+    position: relative;
+    left: 7rem;
+  }
+
+  .footer-two {
+    margin-top: 18rem;
+  }
+  .footer-two .container {
+    width: 100%;
+  }
+
+  .times {
+    text-align: center;
+  }
+  .times .location {
+    font-size: 13px;
+    line-height: 1;
+    margin-top: 1.2rem;
+    width: 100%;
+  }
+  .times .open {
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .foot {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+  }
+}/*# sourceMappingURL=booking.css.map */

@@ -7,6 +7,7 @@
     line-height: 1.5;
     font-family: 'League Spartan', sans-serif;
     /* overflow-x: hidden; */
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -24,6 +25,9 @@ h1 {
     width: 95%;
 }
 
+#para {
+    width: 75%;
+}
 .book {
     margin-top: 2rem;
     font-size: large;
@@ -51,7 +55,7 @@ h1 {
 }
 
 .hero {
-    background-image: url('./images/homepage/hero-bg-desktop.jpg');
+    background-image: url('../images/homepage/hero-bg-desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -67,8 +71,7 @@ h2 {
     width: 45%;
     padding: 10rem 0;
     color: white;
-    margin-bottom: 2rem;
-    
+    margin-bottom: 2rem; 
 }
 
 .zero p {
@@ -223,7 +226,8 @@ img {
 
 .clicks {
     color: gray;
-    margin-top: 5rem
+    margin-top: 5rem;
+    /* margin-left: 2rem; */
 }
 
 .clicks li {
@@ -239,7 +243,9 @@ img {
 
 .clicks li.active {
     color: #111111;
-    list-style-image: url('./images/patterns/pattern-divide.svg');
+    list-style-image: url('../images/patterns/pattern-divide.svg');
+    margin-left: -3.5rem;
+    
 }
 
 .booking {
@@ -256,7 +262,7 @@ img {
 }
 
 .footer-one {
-    background-image: url('./images/homepage/ready-bg-desktop.jpg');
+    background-image: url('../images/homepage/ready-bg-desktop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -354,6 +360,12 @@ img {
         margin-inline: auto;
     }
 
+    .clicks li.active {
+        list-style-image: none;
+        margin-left: 0;
+
+    }
+
     .zero {
         margin-top: 2rem;
         padding: 0;
@@ -377,7 +389,7 @@ img {
     }
 
     .hero {
-        background-image: url('./images/homepage/hero-bg-tablet.jpg');
+        background-image: url('../images/homepage/hero-bg-tablet.jpg');
         height: 100vh;
     }
 
@@ -524,7 +536,7 @@ img {
 
 @media (max-width: 500px) {
     .hero {
-        background-image: url('./images/homepage/hero-bg-mobile.jpg');
+        background-image: url('../images/homepage/hero-bg-mobile.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

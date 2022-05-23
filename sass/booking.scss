@@ -7,7 +7,6 @@
     line-height: 1.5;
     font-family: 'League Spartan', sans-serif;
     scroll-behavior: smooth;
-
 }
 
 @mixin input-style {
@@ -111,6 +110,10 @@ h1 {
     justify-content: space-between;
     width: 70%;
 
+    input:focus {
+        outline: 0;
+        }
+
 }
 
 .form {
@@ -143,6 +146,10 @@ h1 {
         &::placeholder {
             color: gray;
         }
+
+        &:focus {
+            outline: 0;
+            }
     }
 }
 .input-one {
@@ -215,12 +222,20 @@ h1 {
     @include input-style;
     width: 100%;
     margin-top: 1rem;
+
+    &:focus {
+        outline: 0;
+        }
 }
 
 #email {
     @include input-style;
     width: 100%;
     margin-top: 1rem;
+
+    &:focus {
+        outline: 0;
+        }
 }
 
 .people {

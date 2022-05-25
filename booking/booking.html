@@ -1,86 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/booking.css">
-    <title>Booking</title>
-</head>
-<body>
-    <section class="section-one">
-        <div class="container">
-            <a href="../index.html"><img  class="logo" src="../images/logo.svg" alt=""></a>
-            <div class="hero">
-                <h1>Reservations</h1>
-                <p>We can't wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.</p>
-            </div>
-        </div>
 
-        <form action="" class="form" id="form">
-            <input type="text" name="name" id="name" placeholder="Name" required>
-            <input type="email" name="email" id="email" placeholder="Email">
-            <div class="date">
-                <div>
-                    <p><strong>Pick a date</strong></p>
-                </div>
-                <div class="input">
-                    <input type="text" name="day" id="day" placeholder="DD">
-                    <input type="text" name="month" id="month" placeholder="MM">
-                    <input type="text" name="year" id="year" placeholder="YYYY">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/booking.css">
+        <title>Booking</title>
+    </head>
+
+    <body>
+        <section class="section-one">
+            <div class="container">
+                <a href="../index.html"><img class="logo" src="../images/logo.svg" alt=""></a>
+                <div class="hero">
+                    <h1>Reservations</h1>
+                    <p>We can't wait to host you. If you have any special requirements please feel free to call on the
+                        phone number below. We’ll be happy to accommodate you.</p>
                 </div>
             </div>
-            <div class="time">
-                <div>
-                    <p><strong>Pick a time</strong></p>
-                </div>
-                <div class="input-one">
-                    <input type="number" name="hour" id="hour" placeholder="00" required>
-                    <input type="number" name="minute" id="minute" placeholder="00">
-                    <select name="" id="period">
-                        <option value="am">AM</option>
-                        <option value="pm">PM</option>
-                    </select>
-                </div>
-            </div>
-            <div class="people">
-                <button class="btn decrease">-</button>
-                <span><strong><span id="num">4</span> people</strong></span>
-                <button class="btn increase">+</button>
-            </div>
-            <button class="reserve" type="submit">MAKE RESERVATION</button>
 
-        </form>
-    </section>
+            <form action="" class="form" id="form">
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <p class="name-required">This field is required</p>
 
-    <section section-two>
-        <div class="container">
-            <div class="lines">
-                <img src="../images/patterns/pattern-lines.svg" alt="">
-            </div>
-        </div>
-    </section>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <p class="email-required">This field is required</p>
 
-    <footer class="footer-two">
-        <div class="container">
-            <div class="foot">
-                <a href="../index.html"><img class="logo-two" src="../images/logo.svg" alt=""></a>
-                <div class="times">
-                    <div class="location">
-                        <p>MARTHWAITE, SEDBERGH</p>
-                        <p>CUMBRIA</p>
-                        <p>+00 44 123 4567</p>
+                <div class="date">
+                    <div>
+                        <p id="date-text"><strong>Pick a date</strong></p>
+                        <p class="date-incomplete">This field is incomplete</p>
                     </div>
-                    <div class="open">
-                        <p>OPEN TIMES</p>
-                        <P>MON - FRI: 09:00 AM - 10:00 PM</P>
-                        <P>SAT - SUN: 09:00 AM - 11:30 PM</P>
+                    <div class="input">
+                        <input type="text" name="day" id="day" placeholder="DD">
+                        <input type="text" name="month" id="month" placeholder="MM">
+                        <input type="text" name="year" id="year" placeholder="YYYY">
                     </div>
                 </div>
-            </div>
-        </div>
-    </footer>
+                <div class="time">
+                    <div>
+                        <p id="time-text"><strong>Pick a time</strong></p>
+                        <p class="time-incomplete">This field is incomplete</p>
 
-<script src="../booking.js"></script>
-</body>
+                    </div>
+                    <div class="input-one">
+                        <input type="number" name="hour" id="hour" placeholder="00" required>
+                        <input type="number" name="minute" id="minute" placeholder="00">
+                        <select name="" id="period">
+                            <option value="am">AM</option>
+                            <option value="pm">PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="people">
+                    <button class="btn decrease">-</button>
+                    <span><strong><span id="num">4</span> people</strong></span>
+                    <button class="btn increase">+</button>
+                </div>
+                <button class="reserve" type="submit">MAKE RESERVATION</button>
+
+            </form>
+        </section>
+
+        <section section-two>
+            <div class="container">
+                <div class="lines">
+                    <img src="../images/patterns/pattern-lines.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-two">
+            <div class="container">
+                <div class="foot">
+                    <a href="../index.html"><img class="logo-two" src="../images/logo.svg" alt=""></a>
+                    <div class="times">
+                        <div class="location">
+                            <p>MARTHWAITE, SEDBERGH</p>
+                            <p>CUMBRIA</p>
+                            <p>+00 44 123 4567</p>
+                        </div>
+                        <div class="open">
+                            <p>OPEN TIMES</p>
+                            <P>MON - FRI: 09:00 AM - 10:00 PM</P>
+                            <P>SAT - SUN: 09:00 AM - 11:30 PM</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../booking.js"></script>
+    </body>
+
 </html>

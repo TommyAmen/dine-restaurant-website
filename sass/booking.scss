@@ -35,11 +35,11 @@ input[type="text"]::after{
 }
 
 input.invalid::placeholder {
-  color: red !important;
+color: red !important;
 }
 
 .name-required, .email-required {
-  top: -20px;
+top: -20px;
 }
 
 .name-required, .email-required, .date-incomplete, .time-incomplete {
@@ -48,13 +48,20 @@ input.invalid::placeholder {
   font-size: 8px;
   color: red;
   font-weight: bold;
+  margin-bottom: -1.5rem;
+  width: 100%;
 }
 
 
 h1 {
     font-family: 'League Spartan', sans-serif;
     font-weight: 300;
-    font-size: 5rem;
+    font-size: 80px;
+}
+
+p {
+    font-size: 20px;
+    width: 100%;
 }
 
 .section-one {
@@ -77,19 +84,20 @@ h1 {
 .lines {
     
     text-align: center;
-    margin-top: 7rem ;
+    margin-top: 3rem ;
+    padding: 2.5rem;
 
     &::before {
         content: '';
         position: absolute;
-        bottom: -75px;
+        bottom: -100px;
         left: 0;
         background-color: #5c6779;
-        width: 900px;
-        height: 300px;
-        border-radius: 0 0 100px 0;
+        width: 60vw;
+        height: 90vh;
+        border-radius: 0 0 130px 0;
         z-index: -1;
-        opacity: .15; 
+        opacity: .1; 
     }
 }
 
@@ -115,12 +123,15 @@ h1 {
     .open {
         p {
             margin-top: 1rem;
+            font-size: 16px;
         }
     }
 
     .location {
         p {
             margin-top: 1rem;
+            font-size: 16px;
+
         }
     }
 }
@@ -128,6 +139,18 @@ h1 {
 .date {
     display: flex;
     gap: 1rem;
+}
+
+#date-text {
+    font-size: 17px;
+    font-weight: 400;
+    width: 100%;
+}
+
+#time-text {
+    font-size: 17px;
+    font-weight: 400;
+    width: 100%;
 }
 
 .time {
@@ -151,8 +174,8 @@ h1 {
     flex-direction: column;
     gap: 1.5rem;
     position: absolute;
-    right: 270px;
-    top: 200px;
+    right: 300px;
+    top: 215px;
     box-shadow: 0px 40px 30px -20px rgba(0,0,0,0.3);
 
 }
@@ -281,6 +304,9 @@ option {
 .btn {
     @include input-style;
     border: none;
+    font-size: 20px;
+    color: #9e7f66;
+    font-weight: bold;
 
     &:hover {
         cursor: pointer;
@@ -471,9 +497,10 @@ option {
         // width: 100%;
         margin-right: 8rem;
         h1 {
-            font-size: 3.2rem;
+            font-size: 80px;
             text-align: center;
             margin-right: 1rem;
+            width: 100%;
         }
 
         p {
@@ -520,5 +547,26 @@ option {
     }
 
 }
-    
 
+@media (min-width: 1800px) {
+    .lines {
+    
+        text-align: center;
+        margin-top: 3rem ;
+        padding: 2.5rem;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            background-color: #5c6779;
+            width: 60vw;
+            height: 90vh;
+            border-radius: 0 0 130px 0;
+            z-index: -1;
+            opacity: .1; 
+        }
+    }
+
+}

@@ -20,7 +20,7 @@ const timeText = document.getElementById("time-text");
 const select = document.querySelector("select");
 
 decrease.addEventListener("click", () => {
-  if (num.innerHTML <= 0) {
+  if (num.innerHTML <= 1) {
     return;
   } else {
     num.innerHTML = num.innerHTML - 1;
@@ -29,15 +29,6 @@ decrease.addEventListener("click", () => {
 
 increase.addEventListener("click", () => {
   num.innerHTML = parseInt(num.innerHTML) + 1;
-});
-
-inputs = Array.from(inputs);
-inputs.forEach((input) => {
-  form.addEventListener("submit", () => {
-    if (!input.checkValidity()) {
-      input.classList.add("invalid");
-    }
-  });
 });
 
 nameInput.addEventListener("focusout", () => {

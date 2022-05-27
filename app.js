@@ -4,9 +4,14 @@ const social = document.getElementById('social');
 const pic = document.querySelector('img.gathering');
 const heading = document.getElementById('heading');
 const para = document.getElementById('para');
+const body = document.querySelector('body');
 
 
-special.addEventListener('click', (e) => {
+window.addEventListener('load', () => {
+    family.classList.add('active');
+})
+
+special.addEventListener('click', () => {
     pic.src = './images/homepage/special-events-desktop.jpg';
     heading.innerHTML = 'Special Events';
     para.innerHTML = "Whether it's a romantic dinner or special date you're celebrating with others we'll look after you. We'll be sure to mark your special date with an unforgettable meal.";
@@ -17,10 +22,9 @@ special.addEventListener('click', (e) => {
     if (social.classList.contains('active')) {
         social.classList.remove('active');
     }
-    // console.log(e)
 })
 
-family.addEventListener('click', (e) => {
+family.addEventListener('click', () => {
     pic.src = './images/homepage/family-gathering-desktop.jpg';
     heading.innerHTML = 'Family Gathering';
     para.innerHTML = "Family Gathering Special Events Social Events Family Gathering We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all.";
@@ -34,7 +38,7 @@ family.addEventListener('click', (e) => {
 
 })
 
-social.addEventListener('click', (e) => {
+social.addEventListener('click', () => {
     pic.src = './images/homepage/social-events-desktop.jpg';
     heading.innerHTML = 'Social Events';
     para.innerHTML = "Are you looking to have a larger social? No problem! we're more than happy to cater for big parties. We'll work with you to make your event a hit with everyone.";

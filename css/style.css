@@ -379,6 +379,15 @@ img {
         margin-inline: auto;
     }
 
+    .pattern-one {
+        margin-left: 35px;
+    }
+
+    h2 {
+        font-size: 48px;
+        text-align: center;
+    }
+
     .clicks li.active {
         margin-left: 0;
         list-style-image: none;
@@ -387,6 +396,10 @@ img {
     .zero {
         margin-top: 2rem;
         padding: 0;
+    }
+
+    .zero h1 {
+        font-size: 52px;
     }
 
     .zero p {
@@ -421,7 +434,7 @@ img {
 
     .hero-one {
         text-align: center;
-        width: 30%;
+        width: 50%;
         margin-top: 2rem;
 
     }
@@ -494,6 +507,8 @@ img {
         height: 50vh;
         object-fit: cover;
         box-shadow: 0px 40px 30px -20px rgba(0,0,0,0.2);
+        text-align: center;
+        margin-left: 70px;
     }
 
     .family {
@@ -527,6 +542,7 @@ img {
 
     li {
         transition: all .3s ease-out;
+        font-size: 20px;
     }
 
     li:hover {
@@ -551,6 +567,10 @@ img {
         margin-left: 9rem;
     }
 
+    .three {
+        padding-top: 0rem;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -568,14 +588,23 @@ img {
     .one div:nth-of-type(1)::before {
         display: none;
     }
+
+    #para {
+        font-size: 16px;
+    }
     
     .zero h1{
         font-size: 2rem;
+        margin-top: 1rem;
     }
 
     .zero {
         margin-top: -10rem;
         width: 80%;
+    }
+
+    .zero p {
+        font-size: 16px;
     }
 
     .logo {
@@ -632,6 +661,10 @@ img {
         display: none;
     }
 
+    .split h2 {
+        font-size: 36px;
+    }
+
     .pattern-one {
         display: none;
     }
@@ -685,6 +718,20 @@ img {
         object-fit: cover;
     }
 
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .gathering {
+        width: 100%;
+        margin-left: -.05rem;
+        text-align: center;
+    }
+
 }
 
 @media (min-width: 1800px) {
@@ -708,7 +755,7 @@ img {
     }
 
     .container {
-        width: 75%;
+        width: 80%;
     }
 
     .hero-two p{
@@ -741,6 +788,13 @@ img {
         padding-top: 6rem;
     }
 
+    .gathering {
+        width: 10%;
+    }
+
+    .container {
+        max-width: 80%;
+    }
 }
 
 

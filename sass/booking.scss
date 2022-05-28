@@ -525,16 +525,17 @@ option {
 
     .times {
         text-align: center;
+        margin-top: 2rem;
         
-        .location {
+        .location p{
             font-size: 13px;
-            line-height: 1;
+            line-height: .7;
             margin-top: 1.2rem;
             width: 100%;
 
         }
 
-        .open {
+        .open p{
             font-size: 13px;
             width: 100%;
         }
@@ -546,27 +547,17 @@ option {
         margin-left: 2rem;
     }
 
-}
+    .hero h1 {
+        font-size: 48px;
+    }
 
-@media (min-width: 1800px) {
-    .lines {
-    
-        text-align: center;
-        margin-top: 3rem ;
-        padding: 2.5rem;
-    
-        &::before {
-            content: '';
-            position: absolute;
-            bottom: -100px;
-            left: 0;
-            background-color: #5c6779;
-            width: 60vw;
-            height: 90vh;
-            border-radius: 0 0 130px 0;
-            z-index: -1;
-            opacity: .1; 
-        }
+    .date-incomplete {
+        margin-bottom: .8rem;
+    }
+
+    .time-incomplete {
+        margin-top: -.25rem;
+        padding-bottom: .8rem;
     }
 
 }

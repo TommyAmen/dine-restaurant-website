@@ -486,14 +486,15 @@ option {
 
   .times {
     text-align: center;
+    margin-top: 2rem;
   }
-  .times .location {
+  .times .location p {
     font-size: 13px;
-    line-height: 1;
+    line-height: 0.7;
     margin-top: 1.2rem;
     width: 100%;
   }
-  .times .open {
+  .times .open p {
     font-size: 13px;
     width: 100%;
   }
@@ -503,23 +504,17 @@ option {
     align-items: center;
     margin-left: 2rem;
   }
-}
-@media (min-width: 1800px) {
-  .lines {
-    text-align: center;
-    margin-top: 3rem;
-    padding: 2.5rem;
+
+  .hero h1 {
+    font-size: 48px;
   }
-  .lines::before {
-    content: "";
-    position: absolute;
-    bottom: -100px;
-    left: 0;
-    background-color: #5c6779;
-    width: 60vw;
-    height: 90vh;
-    border-radius: 0 0 130px 0;
-    z-index: -1;
-    opacity: 0.1;
+
+  .date-incomplete {
+    margin-bottom: 0.8rem;
+  }
+
+  .time-incomplete {
+    margin-top: -0.25rem;
+    padding-bottom: 0.8rem;
   }
 }/*# sourceMappingURL=booking.css.map */
